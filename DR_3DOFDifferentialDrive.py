@@ -10,7 +10,7 @@ class DR_3DOFDifferentialDrive(Localization):
         Constructor of the :class:`prlab.DR_3DOFDifferentialDrive` class.
 
         :param args: Rest of arguments to be passed to the parent constructor
-        """
+      prpy: Probabilistic Robot Localization Python Library  """
 
         super().__init__(index, kSteps, robot, x0, *args)  # call parent constructor
 

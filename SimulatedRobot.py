@@ -78,9 +78,12 @@ class SimulatedRobot:
 
     def PlotRobot(self):
         """ Updates the plot of the robot at the current pose """
-
-        self.vehicleIcon.update([self.xsk[0], self.xsk[1], self.xsk[3]])
-        plt.pause(0.0000001)
+        print("Llegamos a PlotRobot")
+        
+        self.vehicleIcon.update([self.xsk[0], self.xsk[1], self.xsk[2]])
+        #self.vehicleIcon.plot([self.xsk[0], self.xsk[1], self.xsk[2]])
+        
+        plt.pause(0.001)
         return
 
     def fs(self, xsk_1, uk):  # input velocity motion model with velocity noise
